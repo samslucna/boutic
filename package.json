@@ -1,0 +1,11 @@
+{
+  "name": "boutic",
+  "version": "1.0.0",
+  "description": "tienda dw ropa",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "samuel s. lucena",
+  "license": "ISC"
+}
