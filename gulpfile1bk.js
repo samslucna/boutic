@@ -24,25 +24,40 @@ var paths = {
 		        }
 }
 
-gulp.task('sass', function(cb) {                                 
- gulp.src( paths.styles_scss.src)
+let tsass = (cb)=>{
+
+gulp.src(paths.styles_scss.src)
 	.pipe(sass())
-	.pipe(gulp.dest( paths.styles_scss.dest))
+	.pipe(gulp.dest(paths.styles_scss.dest))
 	.pipe(browserSync.stream())
 
+	cb()
+}
+
+
+let tcssmin= (cb)=>{
+ gulp.src(paths.styles_css.src)
+	.pipe(cssmin())
+	.pipe(rename({extname:'.min.css'}))
+	.pipe(gulp.dest(paths.styles_css.dest))
+	.pipe(browserSync.stream())
+
+	cb()
+}
+
+let serve=  (cb)=>{
+
+browserSync.init({
+
+	server:'./src/'
+
+})
+
+gulp.watch(paths.styles_scss.src,gulp.parallel(tsass,tcssmin))     
+console.log('t')
+gulp.watch('./src/*.html',gulp.parallel(browserSync.reload))
 cb()
-});
 
-// Static Server + watching scss/html files
- gulp.task('serve', gulp.series(['sass'],async function() {
+} 
 
-   browserSync.init({
-            server: "./src"
-                });
-//
-await gulp.watch(paths.styles_scss.src, gulp.series(['sass']));
-await gulp.watch("./src/*.html").on('change', gulp.series(browserSync.reload));
-
-}));
-
-gulp.task('default', gulp.series(['serve']));
+gulp.task('default',gulp.series(serve))

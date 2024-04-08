@@ -1,0 +1,38 @@
+.slider .slides li .caption {
+    color: #fff;
+    position: absolute;
+    top: 80%;
+}
+
+.tabs .tab a{
+color: #ad1457;
+}
+
+
+.tabs .tab a:hover, .tabs .tab a.active {
+
+    font-weight: bold;
+    color: #ad1457;
+}
+
+.tabs .indicator {
+ background-color: #ad1457;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #ad1457;
+}
+
+.card .card-title {
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+
+.title-aside{
+    display: block;
+    background-color: #ad1457;
+    color: #ffffff;
+
+}

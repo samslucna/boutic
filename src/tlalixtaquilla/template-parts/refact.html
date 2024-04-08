@@ -1,0 +1,149 @@
+<nav class="#ad1457 pink darken-3">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img class="responsive-img" style="position: relative; z-index: 100;" width="80%" height="80%" src="<?php bloginfo('template_url'); ?>/img/logo-malina1.png"
+                alt="logop"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down" style="font-weight: bold;">
+            <li><a href="<?php echo home_url()?>">Inicio</a></li>
+            <li><a href="<?php echo home_url()?>/gaceta">Gobierno</a></li>
+            <li><a href="<?php echo home_url()?>/Transparencia">Tramites y Servicios</a></li>
+            <li><a href="<?php echo home_url()?>/armonizacion-contable">Transparencia</a></li>
+            <li><a href="<?php echo home_url()?>/armonizacion-contable">Armización Contable</a></li>
+            <li><a href="<?php echo home_url()?>/sed">SED</a></li>
+
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="<?php echo home_url()?>">Inicio</a></li>
+    <li><a href="<?php echo home_url()?>/gaceta">Gaceta</a></li>
+    <li><a href="<?php echo home_url()?>/transparencia">Transparencia</a></li>
+    <li><a href="<?php echo home_url()?>/armonizacion-contable">Armonización Contable</a></li>
+    <li><a href="<?php echo home_url()?>/sed">SED</a></li>
+</ul>
+
+<div class="row">
+    <div class="col s12 m7 l12">
+        <div class="card">
+            <div class="card-image">
+                <img class="responsive-img" src="<?php
+            
+                $url = $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+                if("http://".$url == get_site_url()."/armonizacion-contable/"){
+                bloginfo('template_url'); ?>/img/armonizacion.png">
+                
+                <?php
+                }else if('http://'.$url == get_site_url().'/unidad-de-transparencia/'){
+                bloginfo('template_url'); ?>/img/transparencia1.png">
+               <?php }else{
+                bloginfo('template_url'); ?>/img/bannerhead.png">
+                <?php } ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="col s12 m7 l9">
+    <div class="col s12 m7 l12">
+        <div class="main-conten card">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="<?php bloginfo('template_url'); ?>/img/slider/sd.png"> <!-- random image -->
+                        <div class="caption left-align" style="background-color: #ad1457;">
+                            <h6> DIF MUNICIPAL REALIZA CENSO</h6>
+                            <h8>
+                                DIF MUNICIPAL REALIZA CENSO DE FAMILIAS QUE NO RECIBEN NINGÚN APOYO SOCIAL EN PARAJE MONTERO.</h8>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="<?php bloginfo('template_url'); ?>/img/slider/s.jpg" >
+                        <!-- random image -->
+                        <div class="caption left-align" >
+                            <h6>CONSTRUCCIÓN DE COMEDOR COMUNITARIO EN SAN MIGUEL</h6>
+                            <h8 class="light grey-text text-lighten-3">
+                                PRESIDENTE DA LUZ VERDE PARA LA CONSTRUCCIÓN DEL COMEDOR COMUNITARIO EN SAN MIGUEL EL PROGRESO.</h8>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="<?php bloginfo('template_url'); ?>/img/slider/d.jpg"> <!-- random image -->
+                        <div class="caption left-align" style="background-color: #ad1457;">
+                            <h6>INICIO A LA CONSTRUCCIÓN DE CANCHA DE USOS MÚLTIPLES EN SAN LORENZO</h6>
+                            <h8 class="light grey-text text-lighten-3">
+                                PRESIDENTE DA BANDERAZO DE INICIO A LA CONSTRUCCIÓN DE CANCHA DE USOS MÚLTIPLES EN SAN LORENZO</h8>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="col s12 m7 l12" style="width: 100%; ">
+        <div class="row">
+            <div class="card col s12 l3">
+                <div class="card-img">
+                    <a href="http://guerrero.infomex.org.mx/"> <img class="responsive-img" src="<?php bloginfo('template_url'); ?>/img/infogro.png" alt="logoinfomex" style="width: 100%; height: 160PX;"></a>
+                </div>
+            </div>
+            <div class="card col s12 l3">
+                <div class="card-img">
+                    <a href="http://itaigro.org.mx/"><img class="responsive-img" src="<?php bloginfo('template_url'); ?>/img/itaigro.jpg" alt="logoinfomex" style="width: 100%;height: 160PX;"></a>
+                </div>
+            </div>
+            <div class="card col s12 l3">
+                <div class="card-img">
+                    <a href="http://guerrero.gob.mx/"> <img src="data:image/png;base64,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" alt="logogro" style="width: 100%; height: 160px ;"> </a>
+                </div>
+            </div>
+            <div class="card col s12 l3">
+                <div class="card-img">
+                    <a href="http://www.plataformadetransparencia.org.mx/web/guest/inicio"> <img src="http://itaigro.org.mx/wp-content/uploads/2019/04/logo-PNT-272x182.jpg" class="responsive-img" alt="logoinfomex" style="width: 100%; height: 160PX;"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<?php get_sidebar(); ?>
+
+
+
+ <div class="container">
+            <div class="row">
+                <div class="col l6 s12 center-align">
+                    <img class="responsive-img" style="width: 15%; height: 15%;" src="<?php bloginfo('template_url'); ?>/img/logo-malina2.png" alt="onion-purple">
+                    <h6 class="white-text" style=" margin: 0;">H. Ayuntamiento Municipal de Malinaltepec</h6>
+                    <p class="grey-text text-lighten-4" style=" margin: 0;">"La Union Hace la Fuerza"</p>
+                </div>
+                <div class="col l4 offset-l2 s12 center-align">
+                    <h6 class="white-text">Ligas de Interes</h6>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="http://guerrero.gob.mx/">Gobierno del Estado de
+                                Guerrero</a></li>
+                        <li><a class="grey-text text-lighten-3" href="http://itaigro.org.mx/">Itaigro</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="http://www.plataformadetransparencia.org.mx/web/guest/inicio">SIPOT</a></li>
+
+                    </ul>
+                    <div class="contacto">
+                        <h6>Email:</h6>
+                        <a class="white-text" href="#">secretariag@malinaltepecgro.gob.mx</a>
+                        <a class="white-text" href="#">utransparencia@malinaltepecgro.gob.mx</a>
+                        <a class="white-text" href="#">contacto@malinaltepecgro.gob.mx</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container" style="text-align: center;">
+                © 2020 Copyright Pagina Institucional del Municipio de Malinaltepec,Guerrero
+            </div>
+        </div>

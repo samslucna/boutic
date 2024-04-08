@@ -1,0 +1,29 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
+  body {
+    background-image:url('../img/piramide.png'), url('../img/maiz2.png')  ;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+
+#pageconten{
+
+    background-image: url('../img/maiz2.png');
+    
+    background-repeat: no-repeat;
+    background-position-y: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    min-height: 600px;
+    
+
+
+}
+
+footer{
+    
+}
